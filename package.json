@@ -1,0 +1,23 @@
+{
+  "name": "affixio-agent-gateway",
+  "version": "1.0.0",
+  "description": "Local agent gateway for testing AffixIO policy checks and signed outcomes inside custom LLM setups.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check src/server.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@affixio/mcp": "^0.1.0",
+    "affixio": "^2.0.4"
+  }
+}
